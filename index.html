@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel blogs</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootsrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+</head>
+<body>
+    <header>
+        <img src="./images/bgi.jpg" class="back-image" alt="bgimage" />
+        <div class="navbar">
+            <div class="logo">
+                <a href="#" class="site-name">LiveTrip</a>
+            </div>
+            <div class="nav-button">
+                <div class="menu-icon">
+                    <ul class="nav-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#Trip">Trip</a></li>
+                        <li><a href="#Blogs">Blogs</a></li>
+                        <li><a href="#contactus">Contact us</a></li>
+                    </ul>
+            </div>
+                </div>
+
+            </div>
+                 <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#Trip">Trip</a></li>
+                    <li><a href="#Blogs">Blogs</a></li>
+                    <li><a href="#contactus">Contact us</a></li>
+                </ul>
+        </div>
+        <div class="content-container">
+            <h2>Share Your Vacation With us</h2>
+            <p>Share your experiences and enjoy that of others</p>
+            <div class="search-form">
+                <input type="text" placeholder="search for places" />
+                <button type="submit">Search</button>
+            </div>
+        </div>
+    </header>
+    <h2 class="destination-heading" id="d-heading">Popular Destination</h2>
+    <section id="destinations">
+        <div class="destination-grid">
+            <div class="destination-item destination-item-1">
+                <img src="./images/inodnesia.jpg" alt="destination 1"/>
+                <div class="destination-name">Indonesia</div>
+            </div>
+            <div class="destination-item destination-item-2">
+                <img src="./images/malaysia.jpg" alt="destination 2" class="malaysia-img"/>
+                <div class="destination-name">Malaysia</div>
+            </div>
+            <div class="destination-item destination-item-3">
+                <img src="./images/australia.jpg" alt="destination 3" class="australia-img"/>
+                <div class="destination-name">Australia</div>
+            </div>
+            <div class="destination-item destination-item-4">
+                <img src="./images/thailand.jpg" alt="destination 4"/>
+                <div class="destination-name">Thailand</div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact1">
+    <div class="container">
+    <h2 class="section-heading">Contact Us</h2>
+    <form>
+        <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Your Name" required>
+            
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="text" id="email" placeholder="Your Email" required>
+
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" placeholder="000000000">
+
+        </div>
+        <div class="form-group">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" placeholder="Message Subject" required>
+
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="name" placeholder="Your Message" rows="4"></textarea>
+</div>
+<button type="submit" class="btn btn-primary">Submit Form</button>
+    </form>
+</div>
+</section>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded",function(){
+        const navButton = document.querySelector(".nav-button");
+        const navlinks = document.querySelector(".nav-links");
+
+        navButton.addEventListener("click",function(){
+            navButton.classList.toggle("active");
+        })
+    })
+    </script>
+</html>
